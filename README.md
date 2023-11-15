@@ -6,8 +6,6 @@ Este projeto realiza a extração, transformação e carga (ETL) de dados para o
 
 Um pipeline bem-feito oferece diversos benefícios, tais como:
 
-![pipeline](doc/pipeline.jpeg)
-
 - **Consistência:** Garante que o processo de ETL seja executado de maneira consistente, evitando erros e mantendo a integridade dos dados.
 
 - **Rastreabilidade:** Facilita o rastreamento de alterações e a compreensão do fluxo de dados.
@@ -52,3 +50,6 @@ python hsm_pipeline.py
 
 Isso iniciará o processo de transformação dos dados para o modelo do resistracker, gerando arquivos de log e de saída.
 
+## Visualização da Pipeline
+
+![pipeline](doc/pipeline.jpeg)
