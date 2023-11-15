@@ -30,7 +30,7 @@ Atenção ! O arquivo deve possui este nome e a estrutura de colunas deve ser a 
 Use o seguinte comando para clonar o repositório:
 
 ```bash
-git clone https://github.com/gabrielfmcoelho/HSM-ETL.git
+git clone https://github.com/Solude-evidence-informed-health/HSM-ETL
 cd HSM-ETL
 ```
 
