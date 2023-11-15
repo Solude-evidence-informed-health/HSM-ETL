@@ -1,0 +1,25 @@
+{
+"id": "DATANODE_sensibilidade_anual_180e35f6-a807-4863-a1ba-ed685d0f6e4f",
+"config_id": "sensibilidade_anual",
+"scope": "<Scope.SCENARIO: 1>",
+"storage_type": "csv",
+"name": null,
+"owner_id": "SCENARIO_pipeline_1e8abab6-fcee-4519-b289-6cd7333e139f",
+"parent_ids": [
+"TASK_verificar_e_eliminar_essenciais_nulos_f9d4cc16-2e01-4a47-a191-b43dd396733e"
+],
+"last_edit_date": "2023-11-15T17:56:12.184216",
+"edits": [],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"editor_id": null,
+"editor_expiration_date": null,
+"data_node_properties": {
+"default_path": "data/raw/perfil_microbiologico.csv",
+"encoding": "utf-8",
+"has_header": true,
+"exposed_type": "pandas"
+}
+}

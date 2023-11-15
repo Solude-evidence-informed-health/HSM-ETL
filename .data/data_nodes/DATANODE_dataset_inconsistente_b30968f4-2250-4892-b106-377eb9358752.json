@@ -1,0 +1,31 @@
+{
+"id": "DATANODE_dataset_inconsistente_b30968f4-2250-4892-b106-377eb9358752",
+"config_id": "dataset_inconsistente",
+"scope": "<Scope.SCENARIO: 1>",
+"storage_type": "excel",
+"name": null,
+"owner_id": "SCENARIO_pipeline_1e8abab6-fcee-4519-b289-6cd7333e139f",
+"parent_ids": [
+"TASK_tratamento_de_inconsistencias_91dc483f-99a0-4e3b-8e0f-acaa710c4a1c"
+],
+"last_edit_date": "2023-11-15T17:56:12.380747",
+"edits": [
+{
+"job_id": "JOB_tratamento_de_inconsistencias_24dffd9e-4775-4d6c-99a2-e01771be1f48",
+"timestamp": "2023-11-15T17:56:12.380747"
+}
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"editor_id": null,
+"editor_expiration_date": null,
+"data_node_properties": {
+"default_path": "data/logging/inconsistencias.xlsx",
+"has_header": true,
+"exposed_type": "pandas",
+"path": "data/logging/inconsistencias.xlsx",
+"sheet_name": null
+}
+}

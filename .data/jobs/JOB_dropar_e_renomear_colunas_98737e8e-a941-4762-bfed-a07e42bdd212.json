@@ -1,0 +1,18 @@
+{
+"id": "JOB_dropar_e_renomear_colunas_98737e8e-a941-4762-bfed-a07e42bdd212",
+"task_id": "TASK_dropar_e_renomear_colunas_18b77649-82f4-4928-a9f7-2500371ca912",
+"status": "<Status.COMPLETED: 7>",
+"force": false,
+"submit_id": "SUBMISSION_83688e45-32e6-4a6b-94e8-0422ce8f3641",
+"submit_entity_id": "SCENARIO_pipeline_1e8abab6-fcee-4519-b289-6cd7333e139f",
+"creation_date": "2023-11-15T17:56:12.234939",
+"subscribers": [
+{
+"fct_name": "_Orchestrator._on_status_change",
+"fct_params": [],
+"fct_module": "taipy.core._orchestrator._orchestrator"
+}
+],
+"stacktrace": [],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405"
+}

@@ -1,0 +1,170 @@
+[CORE]
+core_version="3.0"
+
+[DATA_NODE.sensibilidade_anual]
+storage_type = "csv"
+default_path = "data/raw/perfil_microbiologico.csv"
+scope = "SCENARIO:SCOPE"
+
+
+
+
+
+
+
+
+
+
+
+[TASK.verificar_e_eliminar_essenciais_nulos]
+inputs = [ "sensibilidade_anual:SECTION" ]
+outputs = [ "dataset_nao_nulo:SECTION", "dataset_nulo:SECTION" ]
+function = "operations.verificar_e_dropar_nulos:function"
+skippable = "False:bool"
+
+[TASK.tratamento_de_inconsistencias]
+inputs = [ "dataset_nao_nulo:SECTION" ]
+outputs = [
+  "dataset_consistente:SECTION",
+  "dataset_inconsistente:SECTION"
+]
+function = "operations.tratamentos_especificos_de_inconsistencias:function"
+skippable = "False:bool"
+
+[DATA_NODE.dataset_nao_nulo]
+storage_type = "in_memory"
+scope = "SCENARIO:SCOPE"
+
+[DATA_NODE.dataset_consistente]
+storage_type = "in_memory"
+scope = "SCENARIO:SCOPE"
+
+
+
+
+
+
+
+[DATA_NODE.dataset_nulo]
+storage_type = "excel"
+default_path = "data/logging/nulos.xlsx"
+scope = "SCENARIO:SCOPE"
+
+[DATA_NODE.dataset_inconsistente]
+storage_type = "excel"
+default_path = "data/logging/inconsistencias.xlsx"
+scope = "SCENARIO:SCOPE"
+
+
+
+[TASK.dropar_e_renomear_colunas]
+inputs = [
+  "dataset_com_ano_e_semestre:SECTION"
+]
+outputs = [ "dataset_limpo:SECTION" ]
+function = "operations.dropar_e_renomear_colunas:function"
+skippable = "False:bool"
+
+[DATA_NODE.dataset_limpo]
+storage_type = "in_memory"
+scope = "SCENARIO:SCOPE"
+
+[TASK.traduzir_e_agrupar_terminologias]
+inputs = [
+  "dataset_limpo:SECTION",
+  "dicionario_de_microbiologia:SECTION"
+]
+outputs = [
+  "dataset_traduzido:SECTION",
+  "dataset_pronto_para_transformacao:SECTION"
+]
+function = "operations.traduzir_e_agrupar_terminologias:function"
+skippable = "False:bool"
+
+[DATA_NODE.dataset_traduzido]
+storage_type = "excel"
+default_path = "data/logging/sensibilidade_traduzida_nao_transformada.xlsx"
+scope = "SCENARIO:SCOPE"
+
+[DATA_NODE.dataset_pronto_para_transformacao]
+storage_type = "in_memory"
+scope = "SCENARIO:SCOPE"
+
+[TASK.extrair_lista_de_antibioticos]
+inputs = [ "dataset_pronto_para_transformacao:SECTION" ]
+outputs = [ "lista_de_antibioticos:SECTION" ]
+function = "operations.extrair_lista_de_antibioticos:function"
+skippable = "False:bool"
+
+[DATA_NODE.lista_de_antibioticos]
+storage_type = "in_memory"
+scope = "SCENARIO:SCOPE"
+
+[TASK.criar_dataset_sensibilidade_transformado]
+inputs = [
+  "lista_de_antibioticos:SECTION",
+  "dataset_pronto_para_transformacao:SECTION"
+]
+outputs = [ "dataset_transformado:SECTION" ]
+function = "operations.trasformacao_de_formato:function"
+skippable = "False:bool"
+
+[DATA_NODE.dataset_transformado]
+storage_type = "in_memory"
+scope = "SCENARIO:SCOPE"
+
+[TASK.ajuste_de_nomes_e_colunas]
+inputs = [ "dataset_transformado:SECTION" ]
+outputs = [ "dataset_final_csv:SECTION", "dataset_final_excel:SECTION" ]
+function = "operations.ajuste_de_nomes_e_colunas:function"
+skippable = "False:bool"
+
+[DATA_NODE.dataset_final_csv]
+storage_type = "csv"
+default_path = "data/final/sensibilidade.csv"
+scope = "SCENARIO:SCOPE"
+
+[DATA_NODE.dataset_final_excel]
+storage_type = "excel"
+default_path = "data/final/sensibilidade.xlsx"
+scope = "SCENARIO:SCOPE"
+
+[TASK.criar_ano_e_semestre]
+inputs = [ "dataset_consistente:SECTION" ]
+outputs = [ "dataset_com_ano_e_semestre:SECTION" ]
+function = "operations.criar_colunas_ano_e_semestre:function"
+skippable = "False:bool"
+
+[DATA_NODE.dataset_com_ano_e_semestre]
+storage_type = "in_memory"
+scope = "SCENARIO:SCOPE"
+
+[DATA_NODE.dicionario_de_microbiologia]
+storage_type = "csv"
+default_path = "data/third/dicionario_microbiologia.csv"
+scope = "SCENARIO:SCOPE"
+
+[SCENARIO.pipeline]
+additional_data_nodes = [ ]
+tasks = [
+  "ajuste_de_nomes_e_colunas:SECTION",
+  "criar_ano_e_semestre:SECTION",
+  "criar_dataset_sensibilidade_transformado:SECTION",
+  "dropar_e_renomear_colunas:SECTION",
+  "extrair_lista_de_antibioticos:SECTION",
+  "traduzir_e_agrupar_terminologias:SECTION",
+  "tratamento_de_inconsistencias:SECTION",
+  "verificar_e_eliminar_essenciais_nulos:SECTION"
+]
+
+[SCENARIO.pipeline.sequences]
+tratamento_resistracker = [
+  "ajuste_de_nomes_e_colunas:SECTION",
+  "criar_ano_e_semestre:SECTION",
+  "criar_dataset_sensibilidade_transformado:SECTION",
+  "dropar_e_renomear_colunas:SECTION",
+  "extrair_lista_de_antibioticos:SECTION",
+  "traduzir_e_agrupar_terminologias:SECTION",
+  "tratamento_de_inconsistencias:SECTION",
+  "verificar_e_eliminar_essenciais_nulos:SECTION"
+]

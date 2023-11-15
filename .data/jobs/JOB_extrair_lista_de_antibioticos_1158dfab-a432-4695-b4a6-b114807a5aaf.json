@@ -1,0 +1,18 @@
+{
+"id": "JOB_extrair_lista_de_antibioticos_1158dfab-a432-4695-b4a6-b114807a5aaf",
+"task_id": "TASK_extrair_lista_de_antibioticos_a88b1e03-085a-490d-8664-9d7ac4313a51",
+"status": "<Status.COMPLETED: 7>",
+"force": false,
+"submit_id": "SUBMISSION_83688e45-32e6-4a6b-94e8-0422ce8f3641",
+"submit_entity_id": "SCENARIO_pipeline_1e8abab6-fcee-4519-b289-6cd7333e139f",
+"creation_date": "2023-11-15T17:56:12.245283",
+"subscribers": [
+{
+"fct_name": "_Orchestrator._on_status_change",
+"fct_params": [],
+"fct_module": "taipy.core._orchestrator._orchestrator"
+}
+],
+"stacktrace": [],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405"
+}

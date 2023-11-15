@@ -1,0 +1,18 @@
+{
+"id": "JOB_tratamento_de_inconsistencias_24dffd9e-4775-4d6c-99a2-e01771be1f48",
+"task_id": "TASK_tratamento_de_inconsistencias_91dc483f-99a0-4e3b-8e0f-acaa710c4a1c",
+"status": "<Status.COMPLETED: 7>",
+"force": false,
+"submit_id": "SUBMISSION_83688e45-32e6-4a6b-94e8-0422ce8f3641",
+"submit_entity_id": "SCENARIO_pipeline_1e8abab6-fcee-4519-b289-6cd7333e139f",
+"creation_date": "2023-11-15T17:56:12.226181",
+"subscribers": [
+{
+"fct_name": "_Orchestrator._on_status_change",
+"fct_params": [],
+"fct_module": "taipy.core._orchestrator._orchestrator"
+}
+],
+"stacktrace": [],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405"
+}

@@ -1,0 +1,31 @@
+{
+"id": "DATANODE_dataset_nulo_e220b238-29c9-4840-853e-8d53836c6d88",
+"config_id": "dataset_nulo",
+"scope": "<Scope.SCENARIO: 1>",
+"storage_type": "excel",
+"name": null,
+"owner_id": "SCENARIO_pipeline_1e8abab6-fcee-4519-b289-6cd7333e139f",
+"parent_ids": [
+"TASK_verificar_e_eliminar_essenciais_nulos_f9d4cc16-2e01-4a47-a191-b43dd396733e"
+],
+"last_edit_date": "2023-11-15T17:56:12.356906",
+"edits": [
+{
+"job_id": "JOB_verificar_e_eliminar_essenciais_nulos_5bd7da8e-7ec3-4c8e-b7b9-e8ae4446fa72",
+"timestamp": "2023-11-15T17:56:12.356906"
+}
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"editor_id": null,
+"editor_expiration_date": null,
+"data_node_properties": {
+"default_path": "data/logging/nulos.xlsx",
+"has_header": true,
+"exposed_type": "pandas",
+"path": "data/logging/nulos.xlsx",
+"sheet_name": null
+}
+}
