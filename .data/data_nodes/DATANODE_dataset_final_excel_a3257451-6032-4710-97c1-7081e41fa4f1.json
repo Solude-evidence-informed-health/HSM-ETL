@@ -1,18 +1,18 @@
 {
-"id": "DATANODE_dataset_final_excel_68095ce7-22e9-4b5e-9582-282f756be3bb",
+"id": "DATANODE_dataset_final_excel_a3257451-6032-4710-97c1-7081e41fa4f1",
 "config_id": "dataset_final_excel",
 "scope": "<Scope.SCENARIO: 1>",
 "storage_type": "excel",
 "name": null,
-"owner_id": "SCENARIO_pipeline_1e8abab6-fcee-4519-b289-6cd7333e139f",
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
 "parent_ids": [
-"TASK_ajuste_de_nomes_e_colunas_f08d13c8-5240-47f8-ad75-83e79cb2c587"
+"TASK_ajuste_de_nomes_e_colunas_597342d0-707a-4060-9e8b-bba49f741996"
 ],
-"last_edit_date": "2023-11-15T17:56:48.485027",
+"last_edit_date": "2023-11-21T17:25:32.583515",
 "edits": [
 {
-"job_id": "JOB_ajuste_de_nomes_e_colunas_a4cb5f43-a087-4981-842f-712a4d3208f3",
-"timestamp": "2023-11-15T17:56:48.485027"
+"job_id": "JOB_ajuste_de_nomes_e_colunas_93dc33cf-429d-4307-91dc-486f996d8b8e",
+"timestamp": "2023-11-21T17:25:32.583515"
 }
 ],
 "version": "014e865a-06c8-43e5-a523-03dff14ee405",

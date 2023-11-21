@@ -1,6 +1,7 @@
 import taipy as tp
 from taipy.core.config import Config
 import os 
+import time
 
 
 PATHS = ["./data/final", "./data/logging", "./data/raw", ".data/temp", "./data/temp", "./data/third"]
@@ -25,7 +26,7 @@ if __name__ == '__main__':
     tp.Core().run() # Run Core
   
     # Create Scenario instance based on what was read from TOML file
-    scenario = tp.create_scenario(scenario) 
+    scenario = tp.create_scenario(scenario)
 
     # Execute
     scenario.submit()

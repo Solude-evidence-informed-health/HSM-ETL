@@ -1,0 +1,20 @@
+{
+"id": "TASK_dropar_e_renomear_colunas_4fcf05d1-fbe5-4fdf-b25b-d98d6c9d1fbf",
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"SEQUENCE_tratamento_resistracker_SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda"
+],
+"config_id": "dropar_e_renomear_colunas",
+"input_ids": [
+"DATANODE_dataset_com_ano_e_semestre_f910d2df-8f1f-4273-9e5b-97c184c4a645"
+],
+"function_name": "dropar_e_renomear_colunas",
+"function_module": "operations",
+"output_ids": [
+"DATANODE_dataset_limpo_3e1fe4a0-55c7-40a0-a314-52c56bc16edc"
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"skippable": false,
+"properties": {}
+}

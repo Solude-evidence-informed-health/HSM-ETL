@@ -1,14 +1,14 @@
 {
-"id": "DATANODE_dicionario_de_microbiologia_abdc31fa-7e12-4718-87e0-025e3244aee9",
+"id": "DATANODE_dicionario_de_microbiologia_e46343a0-4001-4075-bcff-4c78b81a8355",
 "config_id": "dicionario_de_microbiologia",
 "scope": "<Scope.SCENARIO: 1>",
 "storage_type": "csv",
 "name": null,
-"owner_id": "SCENARIO_pipeline_1e8abab6-fcee-4519-b289-6cd7333e139f",
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
 "parent_ids": [
-"TASK_traduzir_e_agrupar_terminologias_234eef4e-6688-4dfb-8b3e-7aa7cff39d2c"
+"TASK_traduzir_e_agrupar_terminologias_59c8b062-7711-4257-b5c3-a11861af4d3e"
 ],
-"last_edit_date": "2023-11-15T17:56:12.184985",
+"last_edit_date": "2023-11-21T17:24:51.570881",
 "edits": [],
 "version": "014e865a-06c8-43e5-a523-03dff14ee405",
 "validity_days": null,

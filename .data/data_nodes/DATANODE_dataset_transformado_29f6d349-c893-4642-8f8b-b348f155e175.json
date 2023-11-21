@@ -1,0 +1,26 @@
+{
+"id": "DATANODE_dataset_transformado_29f6d349-c893-4642-8f8b-b348f155e175",
+"config_id": "dataset_transformado",
+"scope": "<Scope.SCENARIO: 1>",
+"storage_type": "in_memory",
+"name": null,
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"TASK_criar_dataset_sensibilidade_transformado_bbfac996-131e-4f1e-ba71-aa538cd26d62",
+"TASK_ajuste_de_nomes_e_colunas_597342d0-707a-4060-9e8b-bba49f741996"
+],
+"last_edit_date": "2023-11-21T17:25:29.514210",
+"edits": [
+{
+"job_id": "JOB_criar_dataset_sensibilidade_transformado_aa88882d-6b58-43c7-9913-8bb495a03e0e",
+"timestamp": "2023-11-21T17:25:29.514210"
+}
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"editor_id": null,
+"editor_expiration_date": null,
+"data_node_properties": {}
+}

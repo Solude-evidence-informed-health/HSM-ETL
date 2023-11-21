@@ -1,0 +1,18 @@
+{
+"id": "JOB_verificar_e_eliminar_essenciais_nulos_dd633eb4-8144-41d4-b148-e8b59b865d97",
+"task_id": "TASK_verificar_e_eliminar_essenciais_nulos_02090ddd-b59b-4889-a15e-91336cfe1036",
+"status": "<Status.COMPLETED: 7>",
+"force": false,
+"submit_id": "SUBMISSION_4c0505f2-0971-40ea-beae-15424a1ad23a",
+"submit_entity_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"creation_date": "2023-11-21T17:24:51.609431",
+"subscribers": [
+{
+"fct_name": "_Orchestrator._on_status_change",
+"fct_params": [],
+"fct_module": "taipy.core._orchestrator._orchestrator"
+}
+],
+"stacktrace": [],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405"
+}

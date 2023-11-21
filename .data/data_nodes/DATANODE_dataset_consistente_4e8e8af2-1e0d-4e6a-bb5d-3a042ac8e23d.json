@@ -1,0 +1,26 @@
+{
+"id": "DATANODE_dataset_consistente_4e8e8af2-1e0d-4e6a-bb5d-3a042ac8e23d",
+"config_id": "dataset_consistente",
+"scope": "<Scope.SCENARIO: 1>",
+"storage_type": "in_memory",
+"name": null,
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"TASK_criar_ano_e_semestre_def9fe4a-10ed-4f7a-860c-1af6b5704512",
+"TASK_tratamento_de_inconsistencias_3a9def0c-6b49-464a-8f0c-d4b7c33e4d8d"
+],
+"last_edit_date": "2023-11-21T17:24:51.766874",
+"edits": [
+{
+"job_id": "JOB_tratamento_de_inconsistencias_47a16ed2-075d-4267-8338-243aa11e129e",
+"timestamp": "2023-11-21T17:24:51.766874"
+}
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"editor_id": null,
+"editor_expiration_date": null,
+"data_node_properties": {}
+}

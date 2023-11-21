@@ -1,0 +1,26 @@
+{
+"id": "DATANODE_dataset_com_ano_e_semestre_f910d2df-8f1f-4273-9e5b-97c184c4a645",
+"config_id": "dataset_com_ano_e_semestre",
+"scope": "<Scope.SCENARIO: 1>",
+"storage_type": "in_memory",
+"name": null,
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"TASK_criar_ano_e_semestre_def9fe4a-10ed-4f7a-860c-1af6b5704512",
+"TASK_dropar_e_renomear_colunas_4fcf05d1-fbe5-4fdf-b25b-d98d6c9d1fbf"
+],
+"last_edit_date": "2023-11-21T17:24:51.800274",
+"edits": [
+{
+"job_id": "JOB_criar_ano_e_semestre_33d632db-53d6-45b8-9f27-9a83327ddc70",
+"timestamp": "2023-11-21T17:24:51.800274"
+}
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"editor_id": null,
+"editor_expiration_date": null,
+"data_node_properties": {}
+}

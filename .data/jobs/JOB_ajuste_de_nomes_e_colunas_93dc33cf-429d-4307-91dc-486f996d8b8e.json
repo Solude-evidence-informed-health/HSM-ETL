@@ -1,0 +1,18 @@
+{
+"id": "JOB_ajuste_de_nomes_e_colunas_93dc33cf-429d-4307-91dc-486f996d8b8e",
+"task_id": "TASK_ajuste_de_nomes_e_colunas_597342d0-707a-4060-9e8b-bba49f741996",
+"status": "<Status.COMPLETED: 7>",
+"force": false,
+"submit_id": "SUBMISSION_4c0505f2-0971-40ea-beae-15424a1ad23a",
+"submit_entity_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"creation_date": "2023-11-21T17:24:51.647762",
+"subscribers": [
+{
+"fct_name": "_Orchestrator._on_status_change",
+"fct_params": [],
+"fct_module": "taipy.core._orchestrator._orchestrator"
+}
+],
+"stacktrace": [],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405"
+}

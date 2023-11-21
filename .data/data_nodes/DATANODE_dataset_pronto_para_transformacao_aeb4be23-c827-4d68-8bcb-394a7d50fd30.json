@@ -1,0 +1,27 @@
+{
+"id": "DATANODE_dataset_pronto_para_transformacao_aeb4be23-c827-4d68-8bcb-394a7d50fd30",
+"config_id": "dataset_pronto_para_transformacao",
+"scope": "<Scope.SCENARIO: 1>",
+"storage_type": "in_memory",
+"name": null,
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"TASK_extrair_lista_de_antibioticos_1defa5e8-9015-44d4-8743-2dcd88aee15b",
+"TASK_traduzir_e_agrupar_terminologias_59c8b062-7711-4257-b5c3-a11861af4d3e",
+"TASK_criar_dataset_sensibilidade_transformado_bbfac996-131e-4f1e-ba71-aa538cd26d62"
+],
+"last_edit_date": "2023-11-21T17:24:52.924934",
+"edits": [
+{
+"job_id": "JOB_traduzir_e_agrupar_terminologias_7cf17f2d-3479-46dd-b850-750da546dcaa",
+"timestamp": "2023-11-21T17:24:52.924934"
+}
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"editor_id": null,
+"editor_expiration_date": null,
+"data_node_properties": {}
+}

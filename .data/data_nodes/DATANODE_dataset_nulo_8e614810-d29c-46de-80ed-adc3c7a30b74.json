@@ -1,18 +1,18 @@
 {
-"id": "DATANODE_dataset_nulo_e220b238-29c9-4840-853e-8d53836c6d88",
+"id": "DATANODE_dataset_nulo_8e614810-d29c-46de-80ed-adc3c7a30b74",
 "config_id": "dataset_nulo",
 "scope": "<Scope.SCENARIO: 1>",
 "storage_type": "excel",
 "name": null,
-"owner_id": "SCENARIO_pipeline_1e8abab6-fcee-4519-b289-6cd7333e139f",
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
 "parent_ids": [
-"TASK_verificar_e_eliminar_essenciais_nulos_f9d4cc16-2e01-4a47-a191-b43dd396733e"
+"TASK_verificar_e_eliminar_essenciais_nulos_02090ddd-b59b-4889-a15e-91336cfe1036"
 ],
-"last_edit_date": "2023-11-15T17:56:12.356906",
+"last_edit_date": "2023-11-21T17:24:51.747227",
 "edits": [
 {
-"job_id": "JOB_verificar_e_eliminar_essenciais_nulos_5bd7da8e-7ec3-4c8e-b7b9-e8ae4446fa72",
-"timestamp": "2023-11-15T17:56:12.356906"
+"job_id": "JOB_verificar_e_eliminar_essenciais_nulos_dd633eb4-8144-41d4-b148-e8b59b865d97",
+"timestamp": "2023-11-21T17:24:51.747227"
 }
 ],
 "version": "014e865a-06c8-43e5-a523-03dff14ee405",

@@ -1,0 +1,20 @@
+{
+"id": "TASK_extrair_lista_de_antibioticos_1defa5e8-9015-44d4-8743-2dcd88aee15b",
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"SEQUENCE_tratamento_resistracker_SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda"
+],
+"config_id": "extrair_lista_de_antibioticos",
+"input_ids": [
+"DATANODE_dataset_pronto_para_transformacao_aeb4be23-c827-4d68-8bcb-394a7d50fd30"
+],
+"function_name": "extrair_lista_de_antibioticos",
+"function_module": "operations",
+"output_ids": [
+"DATANODE_lista_de_antibioticos_5ee671be-0695-4268-9c5c-1c3d8f2032bf"
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"skippable": false,
+"properties": {}
+}

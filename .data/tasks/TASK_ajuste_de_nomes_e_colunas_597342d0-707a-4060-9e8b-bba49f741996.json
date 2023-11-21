@@ -1,0 +1,21 @@
+{
+"id": "TASK_ajuste_de_nomes_e_colunas_597342d0-707a-4060-9e8b-bba49f741996",
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"SEQUENCE_tratamento_resistracker_SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda"
+],
+"config_id": "ajuste_de_nomes_e_colunas",
+"input_ids": [
+"DATANODE_dataset_transformado_29f6d349-c893-4642-8f8b-b348f155e175"
+],
+"function_name": "ajuste_de_nomes_e_colunas",
+"function_module": "operations",
+"output_ids": [
+"DATANODE_dataset_final_csv_07eee542-a019-4c95-a427-fcf055670da6",
+"DATANODE_dataset_final_excel_a3257451-6032-4710-97c1-7081e41fa4f1"
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"skippable": false,
+"properties": {}
+}

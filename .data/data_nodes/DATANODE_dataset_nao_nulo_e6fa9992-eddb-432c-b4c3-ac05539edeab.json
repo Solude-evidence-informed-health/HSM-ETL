@@ -1,0 +1,26 @@
+{
+"id": "DATANODE_dataset_nao_nulo_e6fa9992-eddb-432c-b4c3-ac05539edeab",
+"config_id": "dataset_nao_nulo",
+"scope": "<Scope.SCENARIO: 1>",
+"storage_type": "in_memory",
+"name": null,
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"TASK_verificar_e_eliminar_essenciais_nulos_02090ddd-b59b-4889-a15e-91336cfe1036",
+"TASK_tratamento_de_inconsistencias_3a9def0c-6b49-464a-8f0c-d4b7c33e4d8d"
+],
+"last_edit_date": "2023-11-21T17:24:51.739783",
+"edits": [
+{
+"job_id": "JOB_verificar_e_eliminar_essenciais_nulos_dd633eb4-8144-41d4-b148-e8b59b865d97",
+"timestamp": "2023-11-21T17:24:51.739783"
+}
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"editor_id": null,
+"editor_expiration_date": null,
+"data_node_properties": {}
+}

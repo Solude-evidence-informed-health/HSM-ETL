@@ -1,0 +1,26 @@
+{
+"id": "DATANODE_dataset_limpo_3e1fe4a0-55c7-40a0-a314-52c56bc16edc",
+"config_id": "dataset_limpo",
+"scope": "<Scope.SCENARIO: 1>",
+"storage_type": "in_memory",
+"name": null,
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"TASK_traduzir_e_agrupar_terminologias_59c8b062-7711-4257-b5c3-a11861af4d3e",
+"TASK_dropar_e_renomear_colunas_4fcf05d1-fbe5-4fdf-b25b-d98d6c9d1fbf"
+],
+"last_edit_date": "2023-11-21T17:24:51.825412",
+"edits": [
+{
+"job_id": "JOB_dropar_e_renomear_colunas_72498459-d0f8-45e6-b19f-5c14992ab2e4",
+"timestamp": "2023-11-21T17:24:51.825412"
+}
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"editor_id": null,
+"editor_expiration_date": null,
+"data_node_properties": {}
+}

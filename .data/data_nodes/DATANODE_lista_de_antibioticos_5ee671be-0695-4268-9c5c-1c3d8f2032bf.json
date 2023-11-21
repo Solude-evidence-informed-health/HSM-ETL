@@ -1,0 +1,26 @@
+{
+"id": "DATANODE_lista_de_antibioticos_5ee671be-0695-4268-9c5c-1c3d8f2032bf",
+"config_id": "lista_de_antibioticos",
+"scope": "<Scope.SCENARIO: 1>",
+"storage_type": "in_memory",
+"name": null,
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"TASK_extrair_lista_de_antibioticos_1defa5e8-9015-44d4-8743-2dcd88aee15b",
+"TASK_criar_dataset_sensibilidade_transformado_bbfac996-131e-4f1e-ba71-aa538cd26d62"
+],
+"last_edit_date": "2023-11-21T17:24:52.944931",
+"edits": [
+{
+"job_id": "JOB_extrair_lista_de_antibioticos_b29cd611-05ac-4e7b-a58d-99c8462a9b08",
+"timestamp": "2023-11-21T17:24:52.944931"
+}
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"editor_id": null,
+"editor_expiration_date": null,
+"data_node_properties": {}
+}

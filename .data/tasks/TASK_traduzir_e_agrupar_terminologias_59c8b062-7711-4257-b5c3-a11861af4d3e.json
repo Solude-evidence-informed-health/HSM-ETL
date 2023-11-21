@@ -1,0 +1,22 @@
+{
+"id": "TASK_traduzir_e_agrupar_terminologias_59c8b062-7711-4257-b5c3-a11861af4d3e",
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"SEQUENCE_tratamento_resistracker_SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda"
+],
+"config_id": "traduzir_e_agrupar_terminologias",
+"input_ids": [
+"DATANODE_dataset_limpo_3e1fe4a0-55c7-40a0-a314-52c56bc16edc",
+"DATANODE_dicionario_de_microbiologia_e46343a0-4001-4075-bcff-4c78b81a8355"
+],
+"function_name": "traduzir_e_agrupar_terminologias",
+"function_module": "operations",
+"output_ids": [
+"DATANODE_dataset_traduzido_ba9d2251-be28-476d-b8c6-8825afb9c13a",
+"DATANODE_dataset_pronto_para_transformacao_aeb4be23-c827-4d68-8bcb-394a7d50fd30"
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"skippable": false,
+"properties": {}
+}

@@ -19,7 +19,7 @@ scope = "SCENARIO:SCOPE"
 [TASK.verificar_e_eliminar_essenciais_nulos]
 inputs = [ "sensibilidade_anual:SECTION" ]
 outputs = [ "dataset_nao_nulo:SECTION", "dataset_nulo:SECTION" ]
-function = "operations.verificar_e_dropar_nulos:function"
+function = "operations.tratamentos_especificos_de_inconsistencias:function"
 skippable = "False:bool"
 
 [TASK.tratamento_de_inconsistencias]

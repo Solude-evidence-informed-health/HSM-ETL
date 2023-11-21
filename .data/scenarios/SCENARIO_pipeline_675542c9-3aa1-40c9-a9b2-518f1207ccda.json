@@ -1,0 +1,38 @@
+{
+"id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"config_id": "pipeline",
+"tasks": [
+"TASK_tratamento_de_inconsistencias_3a9def0c-6b49-464a-8f0c-d4b7c33e4d8d",
+"TASK_dropar_e_renomear_colunas_4fcf05d1-fbe5-4fdf-b25b-d98d6c9d1fbf",
+"TASK_criar_ano_e_semestre_def9fe4a-10ed-4f7a-860c-1af6b5704512",
+"TASK_extrair_lista_de_antibioticos_1defa5e8-9015-44d4-8743-2dcd88aee15b",
+"TASK_verificar_e_eliminar_essenciais_nulos_02090ddd-b59b-4889-a15e-91336cfe1036",
+"TASK_criar_dataset_sensibilidade_transformado_bbfac996-131e-4f1e-ba71-aa538cd26d62",
+"TASK_ajuste_de_nomes_e_colunas_597342d0-707a-4060-9e8b-bba49f741996",
+"TASK_traduzir_e_agrupar_terminologias_59c8b062-7711-4257-b5c3-a11861af4d3e"
+],
+"additional_data_nodes": [],
+"properties": {},
+"creation_date": "2023-11-21T17:24:51.579538",
+"primary_scenario": false,
+"subscribers": [],
+"tags": [],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"sequences": {
+"tratamento_resistracker": {
+"tasks": [
+"TASK_criar_dataset_sensibilidade_transformado_bbfac996-131e-4f1e-ba71-aa538cd26d62",
+"TASK_verificar_e_eliminar_essenciais_nulos_02090ddd-b59b-4889-a15e-91336cfe1036",
+"TASK_criar_ano_e_semestre_def9fe4a-10ed-4f7a-860c-1af6b5704512",
+"TASK_traduzir_e_agrupar_terminologias_59c8b062-7711-4257-b5c3-a11861af4d3e",
+"TASK_dropar_e_renomear_colunas_4fcf05d1-fbe5-4fdf-b25b-d98d6c9d1fbf",
+"TASK_extrair_lista_de_antibioticos_1defa5e8-9015-44d4-8743-2dcd88aee15b",
+"TASK_tratamento_de_inconsistencias_3a9def0c-6b49-464a-8f0c-d4b7c33e4d8d",
+"TASK_ajuste_de_nomes_e_colunas_597342d0-707a-4060-9e8b-bba49f741996"
+],
+"properties": {},
+"subscribers": []
+}
+},
+"cycle": null
+}

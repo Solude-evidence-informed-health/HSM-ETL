@@ -1,0 +1,21 @@
+{
+"id": "TASK_tratamento_de_inconsistencias_3a9def0c-6b49-464a-8f0c-d4b7c33e4d8d",
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"SEQUENCE_tratamento_resistracker_SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda"
+],
+"config_id": "tratamento_de_inconsistencias",
+"input_ids": [
+"DATANODE_dataset_nao_nulo_e6fa9992-eddb-432c-b4c3-ac05539edeab"
+],
+"function_name": "tratamentos_especificos_de_inconsistencias",
+"function_module": "operations",
+"output_ids": [
+"DATANODE_dataset_consistente_4e8e8af2-1e0d-4e6a-bb5d-3a042ac8e23d",
+"DATANODE_dataset_inconsistente_365e7b8d-df08-4a02-b07b-b18c5e579505"
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"skippable": false,
+"properties": {}
+}

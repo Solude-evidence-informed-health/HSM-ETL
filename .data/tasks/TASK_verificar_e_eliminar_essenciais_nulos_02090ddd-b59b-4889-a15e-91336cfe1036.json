@@ -1,0 +1,21 @@
+{
+"id": "TASK_verificar_e_eliminar_essenciais_nulos_02090ddd-b59b-4889-a15e-91336cfe1036",
+"owner_id": "SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"parent_ids": [
+"SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda",
+"SEQUENCE_tratamento_resistracker_SCENARIO_pipeline_675542c9-3aa1-40c9-a9b2-518f1207ccda"
+],
+"config_id": "verificar_e_eliminar_essenciais_nulos",
+"input_ids": [
+"DATANODE_sensibilidade_anual_6a686880-d8e1-4eda-aa3d-6e9c1a6b9278"
+],
+"function_name": "tratamentos_especificos_de_inconsistencias",
+"function_module": "operations",
+"output_ids": [
+"DATANODE_dataset_nao_nulo_e6fa9992-eddb-432c-b4c3-ac05539edeab",
+"DATANODE_dataset_nulo_8e614810-d29c-46de-80ed-adc3c7a30b74"
+],
+"version": "014e865a-06c8-43e5-a523-03dff14ee405",
+"skippable": false,
+"properties": {}
+}

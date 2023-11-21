@@ -7,15 +7,14 @@ from icecream import ic
 LISTA_COLUNAS_ESSENCIAIS = [
     'MICROORGANISMO/CULTURA',
     'TOPOGRAFIA',
-    'DATA'
+    'DATA DA CULTURA'
     ]
 LISTA_COLUNAS_DROPAR = [
-    'PACIENTE',
     'CHSM',
     'SETOR',
     'LEITO',
     'ufcCS',
-    'DATA'
+    'DATA DA CULTURA'
     ]
 VARIACOES_ERRADAS = [
     'MECANISMO DE RESISTÊNCIA',
@@ -89,9 +88,9 @@ def criar_colunas_ano_e_semestre(df):
     ic(len(df))
     ic(df.info())
     try:
-        df['DATA'] = pd.to_datetime(df['DATA'], format='%d/%m/%Y')
-        df['ano'] = df['DATA'].dt.year.astype(int)
-        df['semestre'] = df['DATA'].dt.quarter.astype(int)
+        df['DATA DA CULTURA'] = pd.to_datetime(df['DATA DA CULTURA'], format='%d/%m/%Y')
+        df['ano'] = df['DATA DA CULTURA'].dt.year.astype(int)
+        df['semestre'] = df['DATA DA CULTURA'].dt.quarter.astype(int)
         df['semestre'] = df['semestre'].apply(lambda x: 1 if x<=2 else 2)
     except Exception as e:
         ic('Erro ao criar colunas de ano e semestre: ', e)
@@ -119,18 +118,22 @@ def dropar_e_renomear_colunas(df):
     return df
     
 
-def traduzir_e_agrupar_terminologias(df, df_terminologias):
-    ic("Executando etapa de tradução e agrupamento de terminologias...")
-    ic(len(df))
-    ic(df.info())
-    try:
-        dict_terminologias = df_terminologias.set_index('Antigo').to_dict()['Novo']
-        df['microrganismo'] = df['microrganismo'].apply(lambda x: dict_terminologias[x] if x in dict_terminologias.keys() else x)
-        # é preciso transformar para excel?
-        df_traduzido = df.copy()
-    except Exception as e:
-        ic('Erro ao traduzir e agrupar terminologias: ', e)
-        exit()
+def traduzir_e_agrupar_terminologias(df, df_terminologias = None):
+    if True:
+        ic("Pulando dicionario de terminologias...")
+        return df, df
+    else:
+        ic("Executando etapa de tradução e agrupamento de terminologias...")
+        ic(len(df))
+        ic(df.info())
+        try:
+            dict_terminologias = df_terminologias.set_index('Antigo').to_dict()['Novo']
+            df['microrganismo'] = df['microrganismo'].apply(lambda x: dict_terminologias[x] if x in dict_terminologias.keys() else x)
+            # é preciso transformar para excel?
+            df_traduzido = df.copy()
+        except Exception as e:
+            ic('Erro ao traduzir e agrupar terminologias: ', e)
+            exit()
     return df_traduzido, df
 
 
